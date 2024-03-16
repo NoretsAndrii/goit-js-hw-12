@@ -9,13 +9,18 @@
   </head>
   <body>
     <form class="search-form">
-      <input name="input" type="text" />
-      <button class="search-form-btn" type="submit">Search</button>
+      <input class="form-input" name="input" type="text" />
+      <button class="search-form-btn btn" type="submit">Search</button>
     </form>
-    <ul class="gallary"></ul>
+    <ul class="gallary" id="gallary"></ul>
     <script type="module" src="./main.js"></script>
-    <button class="load-more-btn visually-hidden" type="button">
+    <button class="load-more-btn visually-hidden btn" type="button">
       Load more
     </button>
+    <a class="scroll-top" href="#gallary"
+      ><svg width="16" height="16">
+        <use href="./img/icons.svg#icon-arrow-up"></use>
+      </svg>
+    </a>
   </body>
 </html>
