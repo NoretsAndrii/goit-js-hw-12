@@ -7,18 +7,24 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-34f890c2.js">
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-7b98389f.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-03da8548.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-a51daae5.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-517a34cc.css">
   </head>
   <body>
     <form class="search-form">
-      <input name="input" type="text" />
-      <button class="search-form-btn" type="submit">Search</button>
+      <input class="form-input" name="input" type="text" />
+      <button class="search-form-btn btn" type="submit">Search</button>
     </form>
-    <ul class="gallary"></ul>
+    <ul class="gallary" id="gallary"></ul>
     
-    <button class="load-more-btn visually-hidden" type="button">
+    <button class="load-more-btn visually-hidden btn" type="button">
       Load more
     </button>
+    <a class="scroll-top" href="#gallary"
+      ><svg width="16" height="16">
+        <use href="/goit-js-hw-12/assets/icons-b652de2e.svg#icon-arrow-up"></use>
+      </svg>
+    </a>
   </body>
 </html>
