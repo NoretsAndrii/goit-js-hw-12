@@ -45,11 +45,13 @@ function handleSubmit(event) {
   numberPage = 1;
   gallary.innerHTML = '';
   gallary.insertAdjacentHTML('afterend', `<span class="loader"></span>`);
+  loadMoreBtn.classList.add('visually-hidden');
 
   request(wordForSearch, numberPage)
     .then(response => {
       if (response.data.hits.length === 0) {
         gallary.nextElementSibling.remove();
+
         iziToast.error({
           close: false,
           message:
